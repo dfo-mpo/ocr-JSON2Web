@@ -12,7 +12,9 @@
 
 .container {
   display: flex;
-  justify-content: center; /* Horizontally centers the content */
+  
+  justify-content: center;
+  /* Horizontally centers the content */
   margin: 0 auto; /* Centers the container horizontally */
 }
 

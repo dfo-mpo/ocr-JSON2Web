@@ -233,20 +233,7 @@ const File = ({ searchParams }) => {
               reFetchJson={asyncFetch}
               // verified={verified}
             />
-            <Link
-              className={styles.linkStyle}
-              rel="noopener noreferrer"
-              target="_blank"
-              href={{
-                pathname: "/viewJson/",
-                query: {
-                  folderName: folderName,
-                  fileName: fileName,
-                },
-              }}
-            >
-              View Json
-            </Link>
+
             <Iframe
               formSetting={formSetting}
               folderName={folderName}
@@ -254,6 +241,20 @@ const File = ({ searchParams }) => {
               pageHeight={pageHeight}
             />
           </div>
+          <Link
+            className={styles.linkStyle}
+            rel="noopener noreferrer"
+            target="_blank"
+            href={{
+              pathname: "/viewJson/",
+              query: {
+                folderName: folderName,
+                fileName: fileName,
+              },
+            }}
+          >
+            View Json
+          </Link>
         </>
       )}
     </div>
