@@ -33,7 +33,7 @@ const FileNameReader = () => {
       console.log("No data");
     } else {
       const reader = Response.body.getReader();
-
+      
       const readData = async () => {
         try {
           let jsonString = "";
